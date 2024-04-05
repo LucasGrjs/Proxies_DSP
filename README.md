@@ -4,6 +4,8 @@ Proof of concepts and experimentations for the article : "Introducing data synch
 # Requirements  
 mpirun (Open MPI) 4.1.4
 
+Java Binding (https://www.open-mpi.org/faq/?category=java) (https://docs.open-mpi.org/en/v5.0.x/features/java.html)
+
 # How to start examples : 
 ./startMpiModel Article_example/HardSync.xml 2
 
