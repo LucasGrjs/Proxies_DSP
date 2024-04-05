@@ -2,9 +2,9 @@
 Proof of concepts and experimentations for the article : "Introducing data synchronisation policies for distributed agent-based model using proxies" for SCAI2024 (https://ju.se/en-GB/16/1304254.html)
 
 # Requirements  
-mpirun (Open MPI) 4.1.4
+mpirun (Open MPI) 4.1.4 (https://www.open-mpi.org/software/ompi/v4.1/)
 
-Java Binding (https://www.open-mpi.org/faq/?category=java) (https://docs.open-mpi.org/en/v5.0.x/features/java.html)
+Java Binding for Open MPI (https://www.open-mpi.org/faq/?category=java)
 
 # How to start examples : 
 ./startMpiModel Article_example/HardSync.xml 2
