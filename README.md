@@ -6,7 +6,9 @@ mpirun (Open MPI) 4.1.4
 
 # How to start examples : 
 ./startMpiModel Article_example/HardSync.xml 2
+
 ./startMpiModel Article_example/GhosMode.xml 2
+
 ./startMpiModel Article_example/DSP.xml 2
 
 # Results 
