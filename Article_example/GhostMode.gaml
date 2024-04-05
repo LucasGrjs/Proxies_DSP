@@ -21,7 +21,6 @@ global skills: [MPI_SKILL]
 	{
 		if(MPI_RANK  = 0)
 		{
-			
 			create prey
 			{
 				location <- {45,25};
@@ -319,7 +318,7 @@ experiment GM_distribution type: distribution until: (cycle = end_cycle)
 			species prey;
 			species predator;
 			
-	    	chart "Prey eaten by predator0 over the time" type: series y_range: {-0.2,10} title_font: font('SanSerif' , 25.0, #italic) label_font: font('SanSerif', 15 #plain) legend_font: font('SanSerif', 15 #bold)
+	    	chart "Prey eaten by predator0 over the time" type: series y_range: {-0.2,10} title_font: font('SanSerif' , 25.0, #italic) label_font: font('SanSerif', 20 #plain) legend_font: font('SanSerif', 20 #bold)
 	    	{
 				data "prey eaten by predator0" value: prey_eated_by_predator0 color: #green;
 	    	}
