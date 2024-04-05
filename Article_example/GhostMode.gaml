@@ -16,7 +16,6 @@ global skills: [MPI_SKILL]
 	int end_cycle <- 10;
 	
 	int prey_eated_by_predator0 <- 0;
-	int prey_eated_by_predator1 <- 0;
 	
 	init
 	{
@@ -82,14 +81,7 @@ species predator
 				{
 					self.eated <- true;
 				}
-				
-				if(index = 0)
-				{
-					prey_eated_by_predator0 <- prey_eated_by_predator0 + 1;
-				}else
-				{
-					prey_eated_by_predator1 <- prey_eated_by_predator1 + 1;
-				}
+				prey_eated_by_predator0 <- prey_eated_by_predator0 + 1;
 			}
 		}
 	}
@@ -308,7 +300,7 @@ grid OLZ width: grid_width height: grid_height neighbors: 4 skills: [MPI_SKILL, 
 experiment GM_distribution type: distribution until: (cycle = end_cycle)
 {	
 	int i <- 0;
-	reflex when: (cycle > 1)
+	reflex
 	{
 		ask simulation 
 		{
@@ -327,10 +319,9 @@ experiment GM_distribution type: distribution until: (cycle = end_cycle)
 			species prey;
 			species predator;
 			
-	    	chart "Prey eaten by predator at each cycle" type: series y_range: {-0.2,50} title_font: font('SanSerif' , 25.0, #italic) label_font: font('SanSerif', 18 #plain) legend_font: font('SanSerif', 18 #bold)
+	    	chart "Prey eaten by predator0 over the time" type: series y_range: {-0.2,10} title_font: font('SanSerif' , 25.0, #italic) label_font: font('SanSerif', 15 #plain) legend_font: font('SanSerif', 15 #bold)
 	    	{
 				data "prey eaten by predator0" value: prey_eated_by_predator0 color: #green;
-				data "prey eaten by predator1" value: prey_eated_by_predator1 color: #red; 
 	    	}
 		}
 	}
