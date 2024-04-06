@@ -9,9 +9,10 @@ mpirun (Open MPI) 4.1.4 (https://www.open-mpi.org/software/ompi/v4.1/)
 Java Binding for Open MPI (https://www.open-mpi.org/faq/?category=java)
 
 # How to start examples : 
-./startMpiModel Article_example/HardSync.xml 2
 
-./startMpiModel Article_example/GhosMode.xml 2
+./startMpiModel Article_example/GhostMode.xml 2
+
+./startMpiModel Article_example/HardSync.xml 2
 
 ./startMpiModel Article_example/DSP.xml 2
 
