@@ -1,12 +1,24 @@
 # Proxies_DSP
-Proof of concepts and experimentations for the article : "Introducing data synchronisation policies for distributed agent-based model using proxies" for EUMAS2024 (https://euramas.github.io/eumas2024/)
+Proof of concepts and experimentations for the article : "Standardize Data Synchronization Policies for Distributed Agent-Based Simulations Using Proxies" for EUMAS2024 (https://euramas.github.io/eumas2024/)
 
 # Requirements  
 Java 17
 
 mpirun (Open MPI) 4.1.4 (https://www.open-mpi.org/software/ompi/v4.1/)
 
+Apache Maven 3.8.6
+
 Java Binding for Open MPI (https://www.open-mpi.org/faq/?category=java)
+
+# Compile the project
+
+cd Gama_distribution/
+
+cd gama
+
+./travis/build.sh # compile the project (can take some time)
+
+cd ../gama.experimental/gama.experimental.proxy/models/proxy/models # where to start the model execution
 
 # How to start examples : 
 
@@ -17,7 +29,7 @@ Java Binding for Open MPI (https://www.open-mpi.org/faq/?category=java)
 ./startMpiModel Article_example/DSP.xml 2
 
 # Results 
-All the results of these examples can be found in /output.log/snapshot/0 or /output.log/snapshot/1 after the execution of above model.
+All the results (png) of these examples can be found in /output.log/snapshot/0 or /output.log/snapshot/1 after the execution of the models.
 
 
 # Disclaimer
