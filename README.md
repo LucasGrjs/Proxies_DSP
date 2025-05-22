@@ -28,12 +28,18 @@ cd gama
 All the results (png) of these examples can be found in /output.log/snapshot/0 or /output.log/snapshot/1 after the execution of the models.
 
 Results of GhostMode execution will be located in /output.log/snapshot/1 as GhostModeX.png where X represente the cycle number
+
 Results of HardSync execution will be located in /output.log/snapshot/0 as HardSyncX.png where X represente the cycle number
+
 Results of DSP execution will be located in /output.log/snapshot/0 as DSPX.png where X represente the cycle number
+
 
 # Disclaimer
 As these models are just proof of concepts, some exception may emerge and you will have to stop the execution when they reach end (especially HardSync.xml).
+
 Some SIGSEGV error happen at the end of some execution due to the disposal of shared ressources between processors.
+
 As a result of these SIGSEGV will generate hs_err_pid report, please ignore them or delete them.
+
 You might need to start some model a couple of time to get them running properly (especially DSP.xml).
 
