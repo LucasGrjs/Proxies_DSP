@@ -1,6 +1,8 @@
 # Proxies_DSP
 Proof of concepts and experimentations for the article : "Standardize Data Synchronization Policies for Distributed Agent-Based Simulations Using Proxies" for EUMAS2024 (https://euramas.github.io/eumas2024/)
 
+DOI : doi.org/10.1007/978-3-031-93930-3_2 
+
 # Requirements  
 Java 17
 
